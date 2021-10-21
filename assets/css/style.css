@@ -1,0 +1,196 @@
+:root{
+    --color1:darkgoldenrod;
+    --color2:rgb(0, 29, 63);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century Gothic;
+
+}
+body{
+    background-color: var(--color2);
+}
+.buybtn {
+   
+    width: 29rem;
+    margin:20% 40%;
+    position: absolute;
+    overflow: hidden;
+}
+.buybtn button{
+    color: white;
+    border-radius: .5rem;
+    outline: none;
+    background-color: var(--color1);
+    padding: 1rem 3rem;
+    border: none;
+    transition: .2s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .6rem;
+    padding: 2.5rem 1rem;
+    width: 100%;
+    height: 65vh;
+    background-color:lightgray ;
+}
+.main .product img{
+    height: 12rem;
+        width: 100%;
+    border-radius: .5rem;
+
+}
+.main .product{
+    background-color: lightgray;
+    width: 18rem;
+    height: fit-content;
+    border-radius: .3rem;
+    padding: 1rem .3rem;
+    box-shadow: 1rem 1rem 4rem grey;
+
+}
+
+.main .product .content{
+    padding: 1rem;
+}
+.main .product .content p{
+    padding: .5rem;
+}
+.main .product .content input{
+    padding: .4rem;
+    border-radius: .3rem;
+    border:none;
+    outline: none;
+}
+.invoicedetail{
+    background-color: var(--color2);
+    color: #fff;
+    width: 100%;
+    padding: 3rem 0rem;
+    font-weight: 200;
+    overflow: hidden;
+}
+.det{
+    padding: 0 20rem;
+}
+
+
+table{
+    border-radius: .3rem;
+    border: 1px solid grey;
+    
+}
+td{
+    padding: .1rem 1rem;
+  
+}
+th{
+    padding: .1rem 1rem;
+    color: var(--color2);
+    background-color: lightgray;
+}
+button{
+    padding: .3rem .5rem;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    background-color: var(--color1);
+    font-weight:bold;
+}
+.dollar{
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: 2rem;
+    font-size: .8rem;
+    color: var(--color1);
+}
+h4{
+    font-size: 1rem;
+    color: var(--color1);
+}
+
+.invoice{
+    width: 30%;
+    padding: 2rem 23rem;
+}
+
+
+
+.close{
+    color: red;
+    font-size:2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    cursor: pointer;
+    position: absolute;
+    padding-top: -2rem;
+    
+}
+
+
+
+@media print{
+    
+     .main
+     {
+         display:none;
+     }
+     .invoicedetail{
+         background-color: #fff;
+         padding: 21rem 5%;
+         margin-top: -2rem;
+         height: 100%;
+        font-size: 2rem;
+         color: black;
+     }
+     table{
+         width: 90%;
+
+     }
+     .invoice{
+         display: none;
+     }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:426px){
+
+    .buybtn{
+        margin-left: 4rem;
+        margin-top: 19rem;
+    }
+    .main{
+        display: grid;
+        padding: 2rem;
+        height: 100rem;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main .product{
+        width: 19rem;
+    }
+    .det{
+        width: 100%;
+        padding: 1.5rem;
+        
+        margin-top: 2rem;
+    }
+    table{
+        width:80%;
+        margin-left: -1rem;
+    }
+    .invoice{
+        padding:2rem 3.5rem;
+    }
+}
+

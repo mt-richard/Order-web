@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+
+    <section id="buybtn" class="buybtn">
+        <button onclick="openmenu()">Buy Product & Materials</button>
+    </section>
+    <span onclick="closem();" id="close" class="close">&times;</span>
+    <section class="menu" id="menu">
+        <span onclick="closem();" id="close" class="close">&times;</span>
+        <div class="main">
+            
+            <div class="product">
+                <img src="images/comp2.jpg" alt="My Laptop">
+                <div class="content">
+                    <h4 id="price1">200</h4> <h6 class="dollar">$ USD / Piece</h6><hr>
+                    <p>HP 63XL | Ink Cartridge | Works with HP Deskjet 1112, 2100 Series</p>
+                    <form action="#">
+                        <input type="number" id="piece1" min="0" placeholder="Enter Quantity you want">
+                        <button onclick="cartforcomputer();" id="getbtn1"> Add to cart</button> 
+                    </form>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/ip1.jpg" alt="My Laptop">
+                <div class="content">
+                    <h4 id="price2">100</h4> <h6 class="dollar">$ USD / Piece</h6><hr>
+                    <p>BLU VIVO X6 | 2021 | All Day Battery | Unlocked | 6.1” HD+ Display | 64GB </p>
+                    <form action="#">
+                        <input type="number" id="piece2"  min="0" placeholder="Enter Quantity you want">
+                        <button onclick="cartforiphone();" type="submit" id="getbtn2" >Add to cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/mmmm.jpg" alt="My Laptop">
+                <div class="content">
+                    <h4 id="price3">50</h4> <h6 class="dollar">$ USD / Piece</h6><hr>
+                    <p>Microwave Oven with Sound On/Off ECO Mode and LED Lighting</p>
+                    <form action="#">
+                        <input type="number" id="piece3"  min="0" placeholder="Enter Quantity you want">
+                        <button onclick="cartforbags();" type="submit" id="getbtn3">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/download.jfif" alt="My Laptop">
+                <div class="content">
+                    <h4 id="price4">30</h4> <h6 class="dollar">$ USD / Piece</h6><hr>
+                    <p>Oster Blender | Pro 1200 with Glass Jar, 24-Ounce Smoothie Cup, </p>
+                    <form action="#">
+                        <input type="number" id="piece4" min="0" placeholder="Enter Quantity you want">
+                        <button onclick="cartfortools();" type="submit" id="getbtn4" >Add to cart</button>
+                    </form>
+                </div>
+            </div>
+</div>
+            <div class="invoicedetail">
+                <div class="det">
+                    <h3>Get Your Purchase Invoice </h3>
+                    <br><br>
+                    <table >
+                        <tr>
+                            <th>Product you added</th>
+                            <th>Quantity (pcs)</th>
+                            <th>Price According to your quantity ($)</th>
+                        </tr>
+                        <tr>
+                            <td>Computer(s)</td>
+                            <td><span id="qtycomp">:..</span></td>
+                            <td><span id="resultscomp">:..</span></td>
+                        </tr>
+                        <tr>
+                            <td>iPhone(s)</td>
+                            <td><span id="qtyiphone">:..</span></td>
+                            <td><span id="resultsiphone">:..</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bag(s)</td>
+                            <td><span id="qtybags">:..</span></td>
+                            <td><span id="resultsbags">:..</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tool(s)</td>
+                            <td><span id="qtytools">:..</span></td>
+                            <td><span id="resultstools">:..</span></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Total</h3></td>
+                            <td></td>
+                            <td><span id="final" >:..</span></td>
+                        </tr>
+                    </table>
+                    
+                    
+                    
+                </div>
+                <div class="invoice">
+                    <button onclick="final()" >Get / Update Total</button>
+                    <button onclick="window.print()" >Print Invoice</button>
+                    
+                     </div>
+                
+           
+
+                </div>
+                
+                
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
